@@ -112,7 +112,7 @@ elif  pagina_seleccionada == 'Datos extra (gráficos)':
 else:
     # Agregamos un título para la página de gráficos
     st.markdown("<h1 style='text-align: center;'> La Trivia Nórdica </h1>", unsafe_allow_html=True)
-    texto_3 = "¿Te sientes preparado para una trivia y poner a prueba tus conocimientos sobre Haaland? Si es así, pulsa el botón de abajo y prepárate para responder algunas preguntas basadas en la información vista.________________________________________"
+    texto_3 = "¿Te sientes preparado para una trivia y poner a prueba tus conocimientos sobre Haaland? Si es así, pulsa el botón de abajo y prepárate para responder algunas preguntas basadas en la información vista.______________________________________________________"
     st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_3}</div>", unsafe_allow_html=True)
     st.markdown(f"<div style='text-align: center;'><a href=' https://docs.google.com/forms/d/e/1FAIpQLSdWf7Cwi43z-YvTqS-rhnoYFP_7Q-DeNXJGzvviVt_pdxukHQ/viewform?usp=dialog' target='_blank'><button>Entrar a la trivia</button></a></div>", unsafe_allow_html=True) 
 
@@ -121,6 +121,7 @@ else:
 
 
     
+
 
 
 
