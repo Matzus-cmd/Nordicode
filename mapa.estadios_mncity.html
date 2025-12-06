@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c841550ca8b08c68bca38b2514c6a129 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c841550ca8b08c68bca38b2514c6a129" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c841550ca8b08c68bca38b2514c6a129 = L.map(
+                "map_c841550ca8b08c68bca38b2514c6a129",
+                {
+                    center: [52.71764851722153, -1.4919096675451278],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0716542d33ec7ce3fcc0e2365ce9b5a5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0716542d33ec7ce3fcc0e2365ce9b5a5.addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var marker_b3ec2b7726c096f289ab09d55e2f3b44 = L.marker(
+                [51.4750406330186, -0.221629257670773],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_d31670ad70dd3cc7d3cbb79e9d392f48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9adb4619ff022742270ec84da331f09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cec4ae9159cde30119ae86d3c88aeddc = $(`<div id="html_cec4ae9159cde30119ae86d3c88aeddc" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Stamford Bridge<br>         <b>Fecha:</b> 18-08-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 2‑0<br>         <img src='https://www.thisisanfield.com/clubinfo/anfield/' alt='Stamford Bridge' style='max-width:200px;'><br>     </div>`)[0];
+                popup_f9adb4619ff022742270ec84da331f09.setContent(html_cec4ae9159cde30119ae86d3c88aeddc);
+            
+        
+
+        marker_b3ec2b7726c096f289ab09d55e2f3b44.bindPopup(popup_f9adb4619ff022742270ec84da331f09)
+        ;
+
+        
+    
+    
+                marker_b3ec2b7726c096f289ab09d55e2f3b44.setIcon(icon_d31670ad70dd3cc7d3cbb79e9d392f48);
+            
+    
+            var marker_4381f9253b04f600d17265d424ce5175 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_1dcf054087871d941e218ef688d35f22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0308c32b00e83981c7598600d64250bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_493687d1ad20a1b70dde23d00110f760 = $(`<div id="html_493687d1ad20a1b70dde23d00110f760" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 24-08-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 4‑1<br>         <img src='https://en.wikipedia.org/wiki/City_of_Manchester_Stadium' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_0308c32b00e83981c7598600d64250bf.setContent(html_493687d1ad20a1b70dde23d00110f760);
+            
+        
+
+        marker_4381f9253b04f600d17265d424ce5175.bindPopup(popup_0308c32b00e83981c7598600d64250bf)
+        ;
+
+        
+    
+    
+                marker_4381f9253b04f600d17265d424ce5175.setIcon(icon_1dcf054087871d941e218ef688d35f22);
+            
+    
+            var marker_43eeec5f1438d65436c11aa21bddd7c2 = L.marker(
+                [51.5387812427069, -0.0161485678083558],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_5d062603ff9500048c8bb68bdcf95a97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d02b556db0de6fcce44679313e67c3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aea7ccc9873fe08a019feaad8308d39b = $(`<div id="html_aea7ccc9873fe08a019feaad8308d39b" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Estadio Olímpico de Londres<br>         <b>Fecha:</b> 31-08-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 3‑1<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi9AR1Gayfm1N5uDOYlZvqaGOWNPaefBqwBA&s' alt='Estadio Olímpico de Londres' style='max-width:200px;'><br>     </div>`)[0];
+                popup_1d02b556db0de6fcce44679313e67c3b.setContent(html_aea7ccc9873fe08a019feaad8308d39b);
+            
+        
+
+        marker_43eeec5f1438d65436c11aa21bddd7c2.bindPopup(popup_1d02b556db0de6fcce44679313e67c3b)
+        ;
+
+        
+    
+    
+                marker_43eeec5f1438d65436c11aa21bddd7c2.setIcon(icon_5d062603ff9500048c8bb68bdcf95a97);
+            
+    
+            var marker_1be620a6ae9a0353c70dac1703045705 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_23e868c0f02cc52d9d4ccc8c8839f4e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3db41b920bc97913b74a8a4adb147e6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a39ab2fb68a37502c6608c86dcad930 = $(`<div id="html_2a39ab2fb68a37502c6608c86dcad930" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 14-09-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 2‑1<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_3db41b920bc97913b74a8a4adb147e6d.setContent(html_2a39ab2fb68a37502c6608c86dcad930);
+            
+        
+
+        marker_1be620a6ae9a0353c70dac1703045705.bindPopup(popup_3db41b920bc97913b74a8a4adb147e6d)
+        ;
+
+        
+    
+    
+                marker_1be620a6ae9a0353c70dac1703045705.setIcon(icon_23e868c0f02cc52d9d4ccc8c8839f4e7);
+            
+    
+            var marker_05f73ed5d2e44ee3f5618ca3bb9a1446 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_a952094a127fffa93692dd4a3a65a0e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d35b09bd9fc0f09a6e87defe24ce8eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8110ca4a6e4b5db1d2456fb9c6d8aa8 = $(`<div id="html_e8110ca4a6e4b5db1d2456fb9c6d8aa8" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 22-09-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 2‑2<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_7d35b09bd9fc0f09a6e87defe24ce8eb.setContent(html_e8110ca4a6e4b5db1d2456fb9c6d8aa8);
+            
+        
+
+        marker_05f73ed5d2e44ee3f5618ca3bb9a1446.bindPopup(popup_7d35b09bd9fc0f09a6e87defe24ce8eb)
+        ;
+
+        
+    
+    
+                marker_05f73ed5d2e44ee3f5618ca3bb9a1446.setIcon(icon_a952094a127fffa93692dd4a3a65a0e6);
+            
+    
+            var marker_cbc21ef287d305bdc0c92e23bcb6b9d9 = L.marker(
+                [54.9756375879185, -1.62131663975832],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_91f34002ee3917e32fe8bc8d3359e562 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61d0277585cb1aa02b402769820e3626 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ecaec77e91cf2c146d9cd3b8ba7f5b9 = $(`<div id="html_7ecaec77e91cf2c146d9cd3b8ba7f5b9" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> St. James' Park<br>         <b>Fecha:</b> 28-09-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 1‑1<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDTFpSus2N7aSzPC_FU3wJX9Nr4_vDz5r5Uw&s' alt='St. James' Park' style='max-width:200px;'><br>     </div>`)[0];
+                popup_61d0277585cb1aa02b402769820e3626.setContent(html_7ecaec77e91cf2c146d9cd3b8ba7f5b9);
+            
+        
+
+        marker_cbc21ef287d305bdc0c92e23bcb6b9d9.bindPopup(popup_61d0277585cb1aa02b402769820e3626)
+        ;
+
+        
+    
+    
+                marker_cbc21ef287d305bdc0c92e23bcb6b9d9.setIcon(icon_91f34002ee3917e32fe8bc8d3359e562);
+            
+    
+            var marker_d7f94ae74d0ab9569a90c1654dc55204 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_158e83c6dd22a3320f3be9ba1fcd1526 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a86a54b79b7d500f23f2116fbd354f35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eea2a0bbab25b0102634e47dcb8a737c = $(`<div id="html_eea2a0bbab25b0102634e47dcb8a737c" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 05-10-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 3‑2<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_a86a54b79b7d500f23f2116fbd354f35.setContent(html_eea2a0bbab25b0102634e47dcb8a737c);
+            
+        
+
+        marker_d7f94ae74d0ab9569a90c1654dc55204.bindPopup(popup_a86a54b79b7d500f23f2116fbd354f35)
+        ;
+
+        
+    
+    
+                marker_d7f94ae74d0ab9569a90c1654dc55204.setIcon(icon_158e83c6dd22a3320f3be9ba1fcd1526);
+            
+    
+            var marker_320435da9d42356f6722f0faf428f148 = L.marker(
+                [52.5903730475143, -2.12962414129036],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_88c8acc1e118feee961a60ccc2957959 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0117685a60320902fed62c7c1bec851d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28f54ec158963090a2da94cfec4f1c81 = $(`<div id="html_28f54ec158963090a2da94cfec4f1c81" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Molineux Stadium<br>         <b>Fecha:</b> 20-10-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 2‑1<br>         <img src='https://i0.wp.com/destadioenestadio.wordpress.com/wp-content/uploads/2024/01/mol-1-min.jpg?fit=1200%2C750&ssl=1' alt='Molineux Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_0117685a60320902fed62c7c1bec851d.setContent(html_28f54ec158963090a2da94cfec4f1c81);
+            
+        
+
+        marker_320435da9d42356f6722f0faf428f148.bindPopup(popup_0117685a60320902fed62c7c1bec851d)
+        ;
+
+        
+    
+    
+                marker_320435da9d42356f6722f0faf428f148.setIcon(icon_88c8acc1e118feee961a60ccc2957959);
+            
+    
+            var marker_c5bb8155a010e4326e228aa2670d6c01 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_1ecc4c407056be06988242b5919faf1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcab8e7d5336c484405df6cf8a7c557c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a559b26fa0079e4821585aee1f453f2d = $(`<div id="html_a559b26fa0079e4821585aee1f453f2d" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 26-10-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 1-0<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_bcab8e7d5336c484405df6cf8a7c557c.setContent(html_a559b26fa0079e4821585aee1f453f2d);
+            
+        
+
+        marker_c5bb8155a010e4326e228aa2670d6c01.bindPopup(popup_bcab8e7d5336c484405df6cf8a7c557c)
+        ;
+
+        
+    
+    
+                marker_c5bb8155a010e4326e228aa2670d6c01.setIcon(icon_1ecc4c407056be06988242b5919faf1d);
+            
+    
+            var marker_f95ddbc85f6c1bada4648418a205855a = L.marker(
+                [50.7349402177764, -1.83824145494248],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_bfe64f2d14d575448aa22fcd4febcf45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09aca81428e1e1d761947026e81e59b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccaa29cfc7e5bfcb9e6e66f93c3234cf = $(`<div id="html_ccaa29cfc7e5bfcb9e6e66f93c3234cf" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Vitality Stadium<br>         <b>Fecha:</b> 02-11-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 1‑2<br>         <img src='https://www.football-stadiums.co.uk/wp-content/uploads/vitality-stadium-aerial-view-400px.jpg' alt='Vitality Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_09aca81428e1e1d761947026e81e59b9.setContent(html_ccaa29cfc7e5bfcb9e6e66f93c3234cf);
+            
+        
+
+        marker_f95ddbc85f6c1bada4648418a205855a.bindPopup(popup_09aca81428e1e1d761947026e81e59b9)
+        ;
+
+        
+    
+    
+                marker_f95ddbc85f6c1bada4648418a205855a.setIcon(icon_bfe64f2d14d575448aa22fcd4febcf45);
+            
+    
+            var marker_e00c398609be964bee6ce745541429aa = L.marker(
+                [50.8617619872851, -0.0832433795118963],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_4cf23a3b76ef8f9879d0b2e0c8dd1bc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f14d3589c0fae77e203fed163c573b1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbc7340b29678a0de9970871a031b86f = $(`<div id="html_fbc7340b29678a0de9970871a031b86f" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Brighton Stadium<br>         <b>Fecha:</b> 09-11-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 1‑2<br>         <img src='https://kleemannlifts.com/sites/default/files/styles/full/public/projects/american_express_brighton_stadium-uk-1.jpg?itok=A9j96sXG' alt='Brighton Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_f14d3589c0fae77e203fed163c573b1b.setContent(html_fbc7340b29678a0de9970871a031b86f);
+            
+        
+
+        marker_e00c398609be964bee6ce745541429aa.bindPopup(popup_f14d3589c0fae77e203fed163c573b1b)
+        ;
+
+        
+    
+    
+                marker_e00c398609be964bee6ce745541429aa.setIcon(icon_4cf23a3b76ef8f9879d0b2e0c8dd1bc6);
+            
+    
+            var marker_2908ad65bb25c7ff62b19fbf2fd16de1 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_d95fced78f77ad4d44648e65e0244f71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_099c056a86783f889f85460d210ea640 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0dcea4d7b1d5c207b9869f5262e5bfa = $(`<div id="html_a0dcea4d7b1d5c207b9869f5262e5bfa" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 23-11-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 0‑4<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_099c056a86783f889f85460d210ea640.setContent(html_a0dcea4d7b1d5c207b9869f5262e5bfa);
+            
+        
+
+        marker_2908ad65bb25c7ff62b19fbf2fd16de1.bindPopup(popup_099c056a86783f889f85460d210ea640)
+        ;
+
+        
+    
+    
+                marker_2908ad65bb25c7ff62b19fbf2fd16de1.setIcon(icon_d95fced78f77ad4d44648e65e0244f71);
+            
+    
+            var marker_d516f3d7e7a0921c134f08e70f467a06 = L.marker(
+                [53.4309585310593, -2.96062428483441],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_0cccd7f5705ca6e484f3b0d3ebb9fa1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74af236d061a5310ea8adef33d07cd66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86d86148b4c86bf6fbc5ca82c1613fd6 = $(`<div id="html_86d86148b4c86bf6fbc5ca82c1613fd6" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Anfield, Liverpool<br>         <b>Fecha:</b> 01-12-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 0‑2<br>         <img src='https://www.brettmartin.com/images/default-source/daylight-systems-1/application-case-studies/stadia-and-arena/anfield-anfield-rd-stand-(2024)/anfield-day---6.jpg?sfvrsn=805eb2db_3' alt='Anfield, Liverpool' style='max-width:200px;'><br>     </div>`)[0];
+                popup_74af236d061a5310ea8adef33d07cd66.setContent(html_86d86148b4c86bf6fbc5ca82c1613fd6);
+            
+        
+
+        marker_d516f3d7e7a0921c134f08e70f467a06.bindPopup(popup_74af236d061a5310ea8adef33d07cd66)
+        ;
+
+        
+    
+    
+                marker_d516f3d7e7a0921c134f08e70f467a06.setIcon(icon_0cccd7f5705ca6e484f3b0d3ebb9fa1f);
+            
+    
+            var marker_32d2bbc908e15b2e92651cefa3f5d784 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_2c0f0346a7b5deb7b916076274e38978 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7963c278b4c4cef112a5fef9fdfe206 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09faa03a7cd43bb55157c934ac3f0c52 = $(`<div id="html_09faa03a7cd43bb55157c934ac3f0c52" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 04-12-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 3‑0<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_e7963c278b4c4cef112a5fef9fdfe206.setContent(html_09faa03a7cd43bb55157c934ac3f0c52);
+            
+        
+
+        marker_32d2bbc908e15b2e92651cefa3f5d784.bindPopup(popup_e7963c278b4c4cef112a5fef9fdfe206)
+        ;
+
+        
+    
+    
+                marker_32d2bbc908e15b2e92651cefa3f5d784.setIcon(icon_2c0f0346a7b5deb7b916076274e38978);
+            
+    
+            var marker_b34964536d1ecb7b4d33a7ca218f824f = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_ce96b0e8bbc7e475d2ad13e8667ba42a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05dad338b3fa072c1a0af9d2a7df001a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc55c8ff39ecd8d218088a0d723568fe = $(`<div id="html_cc55c8ff39ecd8d218088a0d723568fe" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 15-12-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 1‑2<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_05dad338b3fa072c1a0af9d2a7df001a.setContent(html_cc55c8ff39ecd8d218088a0d723568fe);
+            
+        
+
+        marker_b34964536d1ecb7b4d33a7ca218f824f.bindPopup(popup_05dad338b3fa072c1a0af9d2a7df001a)
+        ;
+
+        
+    
+    
+                marker_b34964536d1ecb7b4d33a7ca218f824f.setIcon(icon_ce96b0e8bbc7e475d2ad13e8667ba42a);
+            
+    
+            var marker_b4a4a404e81bb9624639cf243c758be4 = L.marker(
+                [52.5092618605998, -1.88481499045752],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_31bbbdcc2da5c826f11c17259a5ee56b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_974abb5506571261a41df6f6e6cb9bdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d34bfd20acde6f1c568f46fc8d8ee0e = $(`<div id="html_3d34bfd20acde6f1c568f46fc8d8ee0e" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Villa Park<br>         <b>Fecha:</b> 21-12-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 1‑2<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgleiTctdYoCN9KAXoXQzuBrsCncMkLl8Q0g&s' alt='Villa Park' style='max-width:200px;'><br>     </div>`)[0];
+                popup_974abb5506571261a41df6f6e6cb9bdb.setContent(html_3d34bfd20acde6f1c568f46fc8d8ee0e);
+            
+        
+
+        marker_b4a4a404e81bb9624639cf243c758be4.bindPopup(popup_974abb5506571261a41df6f6e6cb9bdb)
+        ;
+
+        
+    
+    
+                marker_b4a4a404e81bb9624639cf243c758be4.setIcon(icon_31bbbdcc2da5c826f11c17259a5ee56b);
+            
+    
+            var marker_89f0435b2580a77dfeec00af432ac93d = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_5cea0daa48f6463582ce58e7f917a38f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5a3ba5521caf4de9d80f6521a2e21db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3df155b2db351d543f6054af4e95d7b6 = $(`<div id="html_3df155b2db351d543f6054af4e95d7b6" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 26-12-2024<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 1‑1<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_a5a3ba5521caf4de9d80f6521a2e21db.setContent(html_3df155b2db351d543f6054af4e95d7b6);
+            
+        
+
+        marker_89f0435b2580a77dfeec00af432ac93d.bindPopup(popup_a5a3ba5521caf4de9d80f6521a2e21db)
+        ;
+
+        
+    
+    
+                marker_89f0435b2580a77dfeec00af432ac93d.setIcon(icon_5cea0daa48f6463582ce58e7f917a38f);
+            
+    
+            var marker_71e84a53f3060b5c9eb0d460822f4a45 = L.marker(
+                [52.6204964400071, -1.14205002908175],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_3d84bbaea4b4a7cc6f6347816035c2f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d366c370da473e30f4b2218a0333d3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32fcfa8d94a5ceb75adc92988a3d2247 = $(`<div id="html_32fcfa8d94a5ceb75adc92988a3d2247" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> King Power Stadium<br>         <b>Fecha:</b> 29-12-2024<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 2-0<br>         <img src='https://clubs-from-above-v2-assets.s3.eu-west-2.amazonaws.com/aerial_photo_of_leicester_city_king_power_stadium_200721192007_w1500.jpg' alt='King Power Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_4d366c370da473e30f4b2218a0333d3d.setContent(html_32fcfa8d94a5ceb75adc92988a3d2247);
+            
+        
+
+        marker_71e84a53f3060b5c9eb0d460822f4a45.bindPopup(popup_4d366c370da473e30f4b2218a0333d3d)
+        ;
+
+        
+    
+    
+                marker_71e84a53f3060b5c9eb0d460822f4a45.setIcon(icon_3d84bbaea4b4a7cc6f6347816035c2f3);
+            
+    
+            var marker_58bdcb129ed31fd3b05f0f28a8e8407f = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_64fe522e8fb4eb58f5d2a84a0f89a461 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cee570e44479bce66654b39e273d961b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac04d28fbc0b1c2184c65701f5042e39 = $(`<div id="html_ac04d28fbc0b1c2184c65701f5042e39" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 04-01-2025<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 4‑1<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_cee570e44479bce66654b39e273d961b.setContent(html_ac04d28fbc0b1c2184c65701f5042e39);
+            
+        
+
+        marker_58bdcb129ed31fd3b05f0f28a8e8407f.bindPopup(popup_cee570e44479bce66654b39e273d961b)
+        ;
+
+        
+    
+    
+                marker_58bdcb129ed31fd3b05f0f28a8e8407f.setIcon(icon_64fe522e8fb4eb58f5d2a84a0f89a461);
+            
+    
+            var marker_85eb4ff5b61b8b9d35be2ee4697fe377 = L.marker(
+                [51.4909613964555, -0.288555054318604],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_f604ab1e433b74295591957450660b01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9552167cceea4c42d74212313219f832 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3c8d2a1fee1fb22a91c3bef7ccbc759 = $(`<div id="html_b3c8d2a1fee1fb22a91c3bef7ccbc759" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Gtech Community Stadium<br>         <b>Fecha:</b> 14-01-2025<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 2‑2<br>         <img src='https://sportsworld.co.uk/wp-content/smush-webp/2025/01/Brentford-Fc.jpg.webp' alt='Gtech Community Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_9552167cceea4c42d74212313219f832.setContent(html_b3c8d2a1fee1fb22a91c3bef7ccbc759);
+            
+        
+
+        marker_85eb4ff5b61b8b9d35be2ee4697fe377.bindPopup(popup_9552167cceea4c42d74212313219f832)
+        ;
+
+        
+    
+    
+                marker_85eb4ff5b61b8b9d35be2ee4697fe377.setIcon(icon_f604ab1e433b74295591957450660b01);
+            
+    
+            var marker_a565a0d70c637b40b277a899694d5885 = L.marker(
+                [52.0550816272698, 1.14453495424019],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_6ed9cf496502dad7bfe8205a91400fcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31c0434eb77e56efe104bfdd57dc1877 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4f77cdb3c52d5bc5ac47bd459fbf6a1 = $(`<div id="html_f4f77cdb3c52d5bc5ac47bd459fbf6a1" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Portman Road Stadium<br>         <b>Fecha:</b> 19-01-2025<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 6-0<br>         <img src='https://stadium-database.com/wp-content/uploads/2023/11/Portman-Road-min.jpg' alt='Portman Road Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_31c0434eb77e56efe104bfdd57dc1877.setContent(html_f4f77cdb3c52d5bc5ac47bd459fbf6a1);
+            
+        
+
+        marker_a565a0d70c637b40b277a899694d5885.bindPopup(popup_31c0434eb77e56efe104bfdd57dc1877)
+        ;
+
+        
+    
+    
+                marker_a565a0d70c637b40b277a899694d5885.setIcon(icon_6ed9cf496502dad7bfe8205a91400fcd);
+            
+    
+            var marker_67fe76d043cf616126447b1d973da19a = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_490fcecbc91f620429ee3f65223336e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_994c7006d08868fb47e33d81ce505982 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d3d1371ce7fc60e072f28b4b1232206 = $(`<div id="html_6d3d1371ce7fc60e072f28b4b1232206" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 25-01-2025<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 3‑1<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_994c7006d08868fb47e33d81ce505982.setContent(html_6d3d1371ce7fc60e072f28b4b1232206);
+            
+        
+
+        marker_67fe76d043cf616126447b1d973da19a.bindPopup(popup_994c7006d08868fb47e33d81ce505982)
+        ;
+
+        
+    
+    
+                marker_67fe76d043cf616126447b1d973da19a.setIcon(icon_490fcecbc91f620429ee3f65223336e3);
+            
+    
+            var marker_53de258c31c05c77d8c3ea204fbcfebc = L.marker(
+                [51.5552021457453, -0.108195956160859],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_4f741b3f9943d1bfc25fd7785d75f149 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f01882eae406fc15cfd92be956317336 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8ef744b692feefec772755e8b00d6c3 = $(`<div id="html_c8ef744b692feefec772755e8b00d6c3" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Emirates Stadium<br>         <b>Fecha:</b> 02-02-2025<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 1‑5<br>         <img src='https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/d2e3/live/21a285d0-a391-11f0-95e7-93813d968835.jpg' alt='Emirates Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_f01882eae406fc15cfd92be956317336.setContent(html_c8ef744b692feefec772755e8b00d6c3);
+            
+        
+
+        marker_53de258c31c05c77d8c3ea204fbcfebc.bindPopup(popup_f01882eae406fc15cfd92be956317336)
+        ;
+
+        
+    
+    
+                marker_53de258c31c05c77d8c3ea204fbcfebc.setIcon(icon_4f741b3f9943d1bfc25fd7785d75f149);
+            
+    
+            var marker_dc7f96be7016565eaed6bd043c6e54d8 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_07c1530ed76ce9af43a68c48f31ddce3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3e675e033e634c35a9996c6dd147428 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55ddba8f59d46b5eea5a1db4a1702b2c = $(`<div id="html_55ddba8f59d46b5eea5a1db4a1702b2c" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 15-02-2025<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 4-0<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_d3e675e033e634c35a9996c6dd147428.setContent(html_55ddba8f59d46b5eea5a1db4a1702b2c);
+            
+        
+
+        marker_dc7f96be7016565eaed6bd043c6e54d8.bindPopup(popup_d3e675e033e634c35a9996c6dd147428)
+        ;
+
+        
+    
+    
+                marker_dc7f96be7016565eaed6bd043c6e54d8.setIcon(icon_07c1530ed76ce9af43a68c48f31ddce3);
+            
+    
+            var marker_b80e4bf1f6f33a2f75706a9d1f71e04d = L.marker(
+                [51.6041252085107, -0.0662783470945237],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_e91e6ca3e8c9774fa3950fea8c7b7a12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eeb37811b55c3bcf13ba7460076a2e38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6dfa5cfbffa188dccecfd458fe91217f = $(`<div id="html_6dfa5cfbffa188dccecfd458fe91217f" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Tottenham Hotspur Stadium<br>         <b>Fecha:</b> 26-02-2025<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 1-0<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7loq4b9Z3Dvy75B8KL7mcdYio1EygtA87Q&s' alt='Tottenham Hotspur Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_eeb37811b55c3bcf13ba7460076a2e38.setContent(html_6dfa5cfbffa188dccecfd458fe91217f);
+            
+        
+
+        marker_b80e4bf1f6f33a2f75706a9d1f71e04d.bindPopup(popup_eeb37811b55c3bcf13ba7460076a2e38)
+        ;
+
+        
+    
+    
+                marker_b80e4bf1f6f33a2f75706a9d1f71e04d.setIcon(icon_e91e6ca3e8c9774fa3950fea8c7b7a12);
+            
+    
+            var marker_c563a03009f869473b14f61ce5341e4b = L.marker(
+                [52.9400735683434, -1.13266213786989],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_a591916fe0cfa6913708691da7e16b7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_339427faa2c8295cca82e8f2bd2dd52b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53b6655ee34d07752885d073de2f2f40 = $(`<div id="html_53b6655ee34d07752885d073de2f2f40" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> City Ground<br>         <b>Fecha:</b> 08-03-2025<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 0-1<br>         <img src='https://www.the-sun.com/wp-content/uploads/sites/6/2024/05/aerial-view-shows-city-ground-900017838.jpg?quality=80&strip=all' alt='City Ground' style='max-width:200px;'><br>     </div>`)[0];
+                popup_339427faa2c8295cca82e8f2bd2dd52b.setContent(html_53b6655ee34d07752885d073de2f2f40);
+            
+        
+
+        marker_c563a03009f869473b14f61ce5341e4b.bindPopup(popup_339427faa2c8295cca82e8f2bd2dd52b)
+        ;
+
+        
+    
+    
+                marker_c563a03009f869473b14f61ce5341e4b.setIcon(icon_a591916fe0cfa6913708691da7e16b7d);
+            
+    
+            var marker_665f784c1ac72dbd2e9930daf13e8325 = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_bf1b5aa0c8c706436f420f316c760db9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb00d75598b280958dd33143aa056533 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ccfc1e3c7c7cad5db43b98f0eba23f7 = $(`<div id="html_4ccfc1e3c7c7cad5db43b98f0eba23f7" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 15-03-2025<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 2‑2<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_cb00d75598b280958dd33143aa056533.setContent(html_4ccfc1e3c7c7cad5db43b98f0eba23f7);
+            
+        
+
+        marker_665f784c1ac72dbd2e9930daf13e8325.bindPopup(popup_cb00d75598b280958dd33143aa056533)
+        ;
+
+        
+    
+    
+                marker_665f784c1ac72dbd2e9930daf13e8325.setIcon(icon_bf1b5aa0c8c706436f420f316c760db9);
+            
+    
+            var marker_5cffa353f01827c4c3ac51558b700508 = L.marker(
+                [50.9059391173884, -1.38978093902666],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_2675c19a76a432658a66b614afcc2eef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b6b8fc094b71b824742f1c691e5c50b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5147167519cec1a44f9937ca3f831101 = $(`<div id="html_5147167519cec1a44f9937ca3f831101" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> St Mary's Stadium<br>         <b>Fecha:</b> 10-05-2025<br>         <b>Modalidad:</b> Local<br>         <b>Resultado:</b> 0-0<br>         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Saint_Mary%27s_Stadium_-_geograph.org.uk_-_5049881.jpg/640px-Mapcarta.jpg' alt='St Mary's Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_6b6b8fc094b71b824742f1c691e5c50b.setContent(html_5147167519cec1a44f9937ca3f831101);
+            
+        
+
+        marker_5cffa353f01827c4c3ac51558b700508.bindPopup(popup_6b6b8fc094b71b824742f1c691e5c50b)
+        ;
+
+        
+    
+    
+                marker_5cffa353f01827c4c3ac51558b700508.setIcon(icon_2675c19a76a432658a66b614afcc2eef);
+            
+    
+            var marker_8576151482fd2260b58ef9574e9b548a = L.marker(
+                [53.4832655485185, -2.1997942428891],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_b691f5f420d645d3632b708ab8f669aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf9a04065062b7462cf24db8ecd72ae7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc5824237d54ba2c242ad33fc15123ae = $(`<div id="html_cc5824237d54ba2c242ad33fc15123ae" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Etihad Stadium<br>         <b>Fecha:</b> 20-05-2025<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 3‑1<br>         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggMrzmX6ab9E_CF6apO0LEW4S0f6_CDySqg&s' alt='Etihad Stadium' style='max-width:200px;'><br>     </div>`)[0];
+                popup_cf9a04065062b7462cf24db8ecd72ae7.setContent(html_cc5824237d54ba2c242ad33fc15123ae);
+            
+        
+
+        marker_8576151482fd2260b58ef9574e9b548a.bindPopup(popup_cf9a04065062b7462cf24db8ecd72ae7)
+        ;
+
+        
+    
+    
+                marker_8576151482fd2260b58ef9574e9b548a.setIcon(icon_b691f5f420d645d3632b708ab8f669aa);
+            
+    
+            var marker_2689363cc75aeb1ac6cdb3fded758c2e = L.marker(
+                [51.4751032257875, -0.221540400320229],
+                {
+}
+            ).addTo(map_c841550ca8b08c68bca38b2514c6a129);
+        
+    
+            var icon_165fbcd1d2dc551dbca653b2bef42483 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93fcaba304ef27db7252f03489255b54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5887de1c979f04a6f8f972362626dbdc = $(`<div id="html_5887de1c979f04a6f8f972362626dbdc" style="width: 100.0%; height: 100.0%;">         <b>Estadio:</b> Craven Cottage<br>         <b>Fecha:</b> 25-05-2025<br>         <b>Modalidad:</b> Visitante<br>         <b>Resultado:</b> 2‑0<br>         <img src='https://143587181.fs1.hubspotusercontent-eu1.net/hubfs/143587181/Fulham%20Stadium.jpg' alt='Craven Cottage' style='max-width:200px;'><br>     </div>`)[0];
+                popup_93fcaba304ef27db7252f03489255b54.setContent(html_5887de1c979f04a6f8f972362626dbdc);
+            
+        
+
+        marker_2689363cc75aeb1ac6cdb3fded758c2e.bindPopup(popup_93fcaba304ef27db7252f03489255b54)
+        ;
+
+        
+    
+    
+                marker_2689363cc75aeb1ac6cdb3fded758c2e.setIcon(icon_165fbcd1d2dc551dbca653b2bef42483);
+            
+</script>
+</html>
