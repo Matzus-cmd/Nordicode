@@ -113,10 +113,12 @@ else:
 
     # Agregamos un título para la página de gráficos
     st.markdown("<h1 style='text-align: center;'> La Trivia Nórdica </h1>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: center;'><a href='¿Te sientes preparado para una trivia y poner a prueba tus conocimientos sobre Haaland? Si es así, pulsa el botón de abajo y prepárate para responder algunas preguntas basadas en la información vista.' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
+    st.markdown(f"<div style='text-align: center;'><a href=' https://docs.google.com/forms/d/e/1FAIpQLSdWf7Cwi43z-YvTqS-rhnoYFP_7Q-DeNXJGzvviVt_pdxukHQ/viewform?usp=dialog' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
+
+    
+    
 
 
     
-    
 
-
-    
